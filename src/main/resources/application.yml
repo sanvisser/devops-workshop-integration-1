@@ -1,2 +1,4 @@
 exif:
   executable: "exiftool"
+server:
+  port: 8000

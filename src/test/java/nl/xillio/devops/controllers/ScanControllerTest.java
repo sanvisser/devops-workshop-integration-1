@@ -23,7 +23,7 @@ public class ScanControllerTest {
     public void whenImageIsScannedPropertiesAreReturned() throws IOException {
         Response response = http.newCall(
                 new Request.Builder()
-                        .url("http://localhost:8080/scan")
+                        .url("http://localhost:8000/scan")
                         .post(RequestBody.create(
                                 MediaType.get("image/jpeg"),
                                 new File("src/test/resources/picture.jpg")
