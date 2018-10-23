@@ -2,9 +2,12 @@ def mvn(String goals){
     sh "mvn -B -s $goals"
 }
 pipeline {
+    agent any
     stages{
-        stage('Compile') {
-            mvn compile
+        stage('Build') {
+            steps {
+                mvn compile
+            }
         }
     }
 }
